@@ -61,8 +61,8 @@ export default {
       delay:0.6
     })
     gsap.from('.homepage-image-container img',{
-      duration:1,
-      delay:0.7,
+      duration:1.5,
+      delay:0.5,
       opacity:0,
       x:100,
       ease:'power3.inOut'
