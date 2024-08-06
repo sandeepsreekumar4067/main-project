@@ -1,5 +1,6 @@
 :root {
-    --bodyBg: #E9EAEE
+    --bodyBg: #E9EAEE;
+    --grey:#67676F;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
