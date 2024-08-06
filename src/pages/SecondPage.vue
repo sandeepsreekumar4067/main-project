@@ -1,10 +1,12 @@
 <template>
   <div class="secondPage-container">
     <div class="secondPage-first-container">
-        1
+        <span>Advocacy</span>
+        <span>Consultation</span>
+        <span>Expertise</span>
     </div>
     <div class="secondPage-second-container">
-        2
+        Revolutionizing legal support through AI innovation and professional excellence.
     </div>
     <div class="secondPage-third-container">
         3
