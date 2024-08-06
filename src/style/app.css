@@ -1,7 +1,12 @@
 :root{
     --bodyBg:#E9EAEE
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
 body{
     background-color: var(--bodyBg);
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: "Lexend", sans-serif;
 }
