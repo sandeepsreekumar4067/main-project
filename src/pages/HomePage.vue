@@ -29,6 +29,8 @@
 import "../style/homepage.css";
 import homeImage from "../assets/black-white-portrait-digital-nomads.jpg";
 import {gsap} from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 export default {
 
   name: "HomePage",
@@ -65,6 +67,31 @@ export default {
       delay:0.5,
       opacity:0,
       x:100,
+      ease:'power3.inOut'
+    })
+    gsap.to('.homePage-title',{
+      scrollTrigger:{
+        trigger:'homePage-title',
+        start:'top 40%',
+        // end:'top 10%',
+        toggleActions:'play none none none',
+        scrub:true,
+      },
+      x:-300,
+      opacity:0,
+      duration:1,
+      ease:'power3.inOut'
+    })
+    gsap.to('.homepage-image-container',{
+      scrollTrigger:{
+        trigger:'.homePage-title',
+        start:'top 40%',
+        toggleActions:'play none none none',
+        scrub:true
+      },
+      x:400,
+      opacity:0,
+      duration:1,
       ease:'power3.inOut'
     })
   }

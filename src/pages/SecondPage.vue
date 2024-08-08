@@ -56,7 +56,7 @@ export default {
       scrollTrigger: {
         trigger: ".animated-container-1",
         start: "top 85%",
-        toggleActions: "play none none none",
+        toggleActions: "play pause resume reverse",
       },
       opacity: 0,
       duration: 0.7,
@@ -67,7 +67,7 @@ export default {
       scrollTrigger: {
         trigger: ".animated-container-2",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play pause resume reverse",
       },
       opacity: 0,
       duration: 1,
@@ -79,7 +79,7 @@ export default {
       scrollTrigger: {
         trigger: ".animated-container-3",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play pause resume reverse",
       },
       opacity: 0,
       duration: 1.1,
@@ -91,7 +91,7 @@ export default {
       scrollTrigger: {
         trigger: ".secondPage-second-container",
         start: "top 80%", // Start animation when element reaches 80% of the viewport
-        toggleActions: "play none none none",
+        toggleActions: "play pause resume reverse",
       },
       delay: 0.2,
       opacity: 0,
@@ -103,7 +103,7 @@ export default {
       scrollTrigger: {
         trigger: ".animated-span",
         start: "top 85%",
-        toggleActions: "play none none none",
+        toggleActions: "play pause resume reverse",
       },
       opacity: 0,
       x: -100,
@@ -115,7 +115,7 @@ export default {
         scrollTrigger:{
             trigger:'.secondContainer-title',
             start:'top 90%',
-            toggleActions:'play none none none'
+            toggleActions:"play pause resume reverse"
         },
         opacity:0,
         x:-100,
@@ -127,7 +127,7 @@ export default {
         scrollTrigger:{
             trigger:'.third-container-buttons',
             start:'top 90%',
-            toggleActions:'play none none none'
+            toggleActions:"play pause resume reverse"
         },
         opacity:0,
         duration:1,

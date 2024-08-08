@@ -1,12 +1,14 @@
 .navbar-container {
     height: 5rem;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: var(--bodyBg);
+    z-index: 1000;
   }
   
   .icon-container {
