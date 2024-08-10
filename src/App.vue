@@ -1,25 +1,19 @@
 <template>
   <NavBar/>
-  <HomePage/>
-  <SecondPage/>
-  <ThirdPage/>
+  <HomeRender/>
 </template>
 
 <script>
-import HomePage from './pages/HomePage.vue';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../src/style/app.css'
 import NavBar from './components/NavBar.vue';
-import SecondPage from './pages/SecondPage.vue';
-import ThirdPage from './pages/ThirdPage.vue';
+import HomeRender from './pages/HomeRender.vue';
 
 export default {
   name: 'App',
   components: {
-    HomePage,
     NavBar,
-    SecondPage,
-    ThirdPage
+    HomeRender
   }
 }
 </script>
