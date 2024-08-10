@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     box-sizing: border-box;
     flex-direction: column;
     padding: 1rem;
@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 8rem;
 }
 
 .card {
@@ -30,6 +31,7 @@
     width: 30%;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .case-cards {
@@ -69,4 +71,17 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+.booking-button{
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
 }

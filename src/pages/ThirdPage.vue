@@ -51,6 +51,9 @@
         </div>
       </div>
     </div>
+    <div class="booking-button">
+    book now
+  </div>
   </div>
 </template>
 
@@ -150,6 +153,17 @@ export default {
       xPercent:100,
       opacity:0
     })
+   gsap.from('.booking-button',{
+    scrollTrigger:{
+      trigger:'.card',
+      scrub:1,
+      toggleActions:'play none none none',
+      start:'top 30%',
+      end:'bottom 70%'
+    },
+    yPercent:100,
+    opacity:0.4
+   })
   }
 };
 </script>
