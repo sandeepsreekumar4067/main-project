@@ -4,14 +4,14 @@
         <img :src="logoIcon" alt="">
     </div>
     <div class="navbar-components">
-        <span class="navbar-component">Home</span>
+        <span class="navbar-component" @click="()=>{this.$router.push('/')}">Home</span>
         <span class="navbar-component">About</span>
         <span class="navbar-component">practice area</span>
         <span class="navbar-component">Case Result</span>
         <span class="navbar-component">packages</span>
         <span class="navbar-component">Blog</span>
     </div>
-    <div class="consulation-container">
+    <div class="consulation-container" @click="()=>{this.$router.push('/selection-page')}">
         <span>Get Consulation</span>
     </div>
   </div>
