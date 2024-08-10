@@ -27,7 +27,7 @@
 
 <script>
 import "../style/homepage.css";
-import homeImage from "../assets/black-white-portrait-digital-nomads.jpg";
+import homeImage from "../assets/lawyer3.jpeg";
 import {gsap} from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
