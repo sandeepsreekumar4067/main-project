@@ -114,7 +114,7 @@ export default {
     gsap.from('.secondContainer-title',{
         scrollTrigger:{
             trigger:'.secondContainer-title',
-            start:'top 90%',
+            start:'top 95%',
             toggleActions:"play pause resume reverse"
         },
         opacity:0,
@@ -126,12 +126,12 @@ export default {
     gsap.from('.third-container-buttons span',{
         scrollTrigger:{
             trigger:'.third-container-buttons',
-            start:'top 90%',
+            start:'top 95%',
             toggleActions:"play pause resume reverse"
         },
         opacity:0,
         duration:1,
-        stagger:0.4,
+        stagger:0.3,
         delay:0.5,
         x:-100
     })

@@ -4,7 +4,7 @@
       Law Definitions
     </div>
     <div class="case-card-container">
-      <div class="card" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
+      <div class="card c1" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
         <div class="case-cards">
           <img :src="corporate" alt="Corporate Law" class="card-image" />
           <div class="case-content">
@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="card" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
+      <div class="card 2" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
         <div class="case-cards">
           <img :src="criminal" alt="Corporate Law" class="card-image" />
           <div class="case-content">
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="card" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
+      <div class="card 3" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
         <div class="case-cards">
           <img :src="realEstate" alt="Corporate Law" class="card-image" />
           <div class="case-content">
@@ -106,25 +106,29 @@ export default {
     gsap.from('.thirdPage-title',{
       scrollTrigger:{
         trigger:'.thirdPage-title',
-        statusbar:'top 60%',
-        toggleActions:'play none none none'
+        start:'top 80%',
+        end:'top 30%',
+        toggleActions:'play none none none',
+        scrub:true
       },
       letterSpacing:0,
       duration:0.8,
       opacity:0,
       ease:'power3.inOut'
     })
-    gsap.from('.card',{
+    // Animate .c1 container out of the viewport on scroll upwards and reverse it on scroll downwards
+    gsap.from('.c1',{
       scrollTrigger:{
-        trigger:'.thirdPage-title',
-        start:'top 50%',
-        toggleActions:'play pasue resume reverse'
+        trigger:'.c1',
+        scrub:true,
+        toggleActions:'play none none none',
+        start:'top 90%',
+        end:'top 40%'
       },
-      duration:1,
+      xPercent:-100,
       opacity:0,
-      stagger:0.4,
-      xPercent:-100
     })
+    gsap.from('.c2')
   }
 };
 </script>
