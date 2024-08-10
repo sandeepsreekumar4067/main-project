@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="card 2" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
+      <div class="card c2" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
         <div class="case-cards">
           <img :src="criminal" alt="Corporate Law" class="card-image" />
           <div class="case-content">
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="card 3" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
+      <div class="card c3" @mouseenter="rotateCard($event)" @mouseleave="reverseRotateCard($event)">
         <div class="case-cards">
           <img :src="realEstate" alt="Corporate Law" class="card-image" />
           <div class="case-content">
@@ -120,7 +120,7 @@ export default {
     gsap.from('.c1',{
       scrollTrigger:{
         trigger:'.c1',
-        scrub:true,
+        scrub:1,
         toggleActions:'play none none none',
         start:'top 90%',
         end:'top 40%'
@@ -128,7 +128,28 @@ export default {
       xPercent:-100,
       opacity:0,
     })
-    gsap.from('.c2')
+    gsap.from('.c2',{
+      scrollTrigger:{
+        trigger:'.thirdPage-title',
+        start:'top 90%',
+        end:'top 10%',
+        toggleActions:'play none none none',
+        scrub:1
+      },
+      borderRadius:'50%',
+      scale:0
+    })
+    gsap.from('.c3',{
+      scrollTrigger:{
+        trigger:'.c3',
+        scrub:1,
+        toggleActions:'play none none none',
+        start:'top 90%',
+        end:'top 40%'
+      },
+      xPercent:100,
+      opacity:0
+    })
   }
 };
 </script>
