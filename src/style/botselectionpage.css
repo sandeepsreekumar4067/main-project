@@ -29,7 +29,14 @@
     font-weight: 600;
 }
 .bot-image{
-    height: 40%;
+    height: 50%;
     width: 100%;
-    background-color: red;
+}
+.bot-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.bot-description{
+    text-align: center;
 }
