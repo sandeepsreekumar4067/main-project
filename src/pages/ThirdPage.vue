@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="booking-button">
+    <div class="booking-button" @click="()=>{this.$router.push('/selection-page')}">
     book now
   </div>
   </div>
