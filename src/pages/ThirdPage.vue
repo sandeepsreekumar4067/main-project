@@ -102,5 +102,29 @@ export default {
       gsap.to(image, { display: "flex", delay: 0.7 });
     },
   },
+  mounted(){
+    gsap.from('.thirdPage-title',{
+      scrollTrigger:{
+        trigger:'.thirdPage-title',
+        statusbar:'top 60%',
+        toggleActions:'play none none none'
+      },
+      letterSpacing:0,
+      duration:0.8,
+      opacity:0,
+      ease:'power3.inOut'
+    })
+    gsap.from('.card',{
+      scrollTrigger:{
+        trigger:'.thirdPage-title',
+        start:'top 50%',
+        toggleActions:'play pasue resume reverse'
+      },
+      duration:1,
+      opacity:0,
+      stagger:0.4,
+      xPercent:-100
+    })
+  }
 };
 </script>
