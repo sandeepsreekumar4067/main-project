@@ -1,0 +1,35 @@
+.bot-selectionPage-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botPage-card-component{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.botCards{
+    height: 100%;
+    width: 26%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.bot-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.bot-image{
+    height: 40%;
+    width: 100%;
+    background-color: red;
+}
