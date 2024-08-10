@@ -73,11 +73,11 @@ export default {
       scrollTrigger:{
         trigger:'homePage-title',
         start:'top 40%',
-        // end:'top 10%',
+        end:'bottom 98%',
         toggleActions:'play none none none',
-        scrub:true,
+        scrub:1,
       },
-      x:-300,
+      xPercent:-100,
       opacity:0,
       duration:1,
       ease:'power3.inOut'
@@ -87,9 +87,9 @@ export default {
         trigger:'.homePage-title',
         start:'top 40%',
         toggleActions:'play none none none',
-        scrub:true
+        scrub:1
       },
-      x:400,
+      xPercent:100,
       opacity:0,
       duration:1,
       ease:'power3.inOut'
