@@ -26,4 +26,5 @@ body {
 
 * {
     font-family: "Lexend", sans-serif;
+    overflow-x: hidden;
 }
