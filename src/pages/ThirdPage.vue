@@ -93,7 +93,7 @@ export default {
       const card = target.querySelector(".case-cards");
       const image = target.querySelector(".card-image");
       const title = target.querySelector(".case-content");
-      gsap.to(title, { opacity: 0, duration: 0.8 });
+      gsap.to(title, { opacity: 0, delay:0.6, duration:0.6});
       gsap.to(card, {
         rotateY: 0,
         duration: 1.5,
@@ -109,7 +109,7 @@ export default {
         start:'top 80%',
         end:'top 30%',
         toggleActions:'play none none none',
-        scrub:true
+        scrub:1
       },
       letterSpacing:0,
       duration:0.8,

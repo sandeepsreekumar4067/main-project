@@ -19,7 +19,7 @@
 
 <script>
 import '../style/navbar.css'
-import logoIcon from '../assets/logoicon.png'
+import logoIcon from '../assets/logoicon.svg'
 import {gsap} from 'gsap'
 export default {
     name:'NavBar',

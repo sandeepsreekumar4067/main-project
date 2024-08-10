@@ -63,6 +63,7 @@
 .case-image{
     height: 50%;
     width: 50%;
+    overflow: hidden;
 }
 .case-image img{
     height: 100%;
