@@ -5,6 +5,7 @@
         class="botCards"
         @mouseenter="colorSpread($event)"
         @mouseleave="reverseColorSpread($event)"
+        @click="()=>{this.$router.push('/casual-bot')}"
       >
         <div class="bot-title">Legal Consultant</div>
         <div class="bot-image">
@@ -15,7 +16,6 @@
           on a wide range of legal issues, empowering you to navigate challenges
           with confidence
         </div>
-        <a href="#" @click="()=>{this.$router.push('/casual-bot')}">chat.....</a>
       </div>
       <div
         class="botCards"

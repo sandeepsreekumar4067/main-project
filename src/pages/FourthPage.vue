@@ -3,9 +3,7 @@
     <div class="fourth-page-components" id="comp">
       <div class="fourthPage-main-title">Our Services...</div>
       <div class="fourthPage-circle-container">
-        <div class="fourth-page-centre-circle">
-            
-        </div>
+        <div class="fourth-page-centre-circle"></div>
         <span class="service-span s1">
           <div class="circular-text">Legal Advice Chat Bot</div>
         </span>
@@ -18,7 +16,6 @@
         <span class="service-span s4">
           <div class="circular-text">Appointment Scheduling</div>
         </span>
-        
       </div>
     </div>
   </div>
@@ -51,7 +48,7 @@ export default {
       {
         xPercent: -70,
         opacity: 1,
-      },
+      }
     );
     timeline.to(".s1", {
       opacity: 1,
@@ -69,8 +66,8 @@ export default {
       ".s1",
       {
         opacity: 1,
-        xPercent:-20,
-        yPercent:-20,
+        xPercent: -20,
+        yPercent: -20,
         scale: 1.2,
         duration: 1,
         ease: "power2.out",
@@ -81,8 +78,8 @@ export default {
       ".s2",
       {
         opacity: 1,
-        xPercent:20,
-        yPercent:-20,
+        xPercent: 20,
+        yPercent: -20,
         scale: 1.2,
         duration: 1,
         ease: "power2.out",
@@ -93,8 +90,8 @@ export default {
       ".s3",
       {
         opacity: 1,
-        xPercent:-20,
-        yPercent:20,
+        xPercent: -20,
+        yPercent: 20,
         scale: 1.2,
         duration: 1,
         ease: "power2.out",
@@ -105,8 +102,8 @@ export default {
       ".s4",
       {
         opacity: 1,
-        xPercent:20,
-        yPercent:20,
+        xPercent: 20,
+        yPercent: 20,
         scale: 1.2,
         duration: 1,
         ease: "power2.out",
