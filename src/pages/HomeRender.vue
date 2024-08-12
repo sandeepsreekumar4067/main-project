@@ -1,8 +1,8 @@
 <template>
   <HomePage/>
   <SecondPage/>
-  <ThirdPage/>
   <FourthPage/>
+  <ThirdPage/>
 </template>
 
 <script>

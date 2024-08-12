@@ -66,6 +66,7 @@ export default {
     timeline.to(".s4", {
       opacity: 1,
     });
+    
   },
 };
 </script>

@@ -29,8 +29,6 @@
 import "../style/homepage.css";
 import homeImage from "../assets/lawyer3.jpeg";
 import {gsap} from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger)
 export default {
 
   name: "HomePage",
@@ -71,9 +69,8 @@ export default {
     })
     gsap.to('.homePage-title',{
       scrollTrigger:{
-        trigger:'homePage-title',
+        trigger:'.homePage-title',
         start:'top 40%',
-        end:'bottom 98%',
         toggleActions:'play none none none',
         scrub:1,
       },

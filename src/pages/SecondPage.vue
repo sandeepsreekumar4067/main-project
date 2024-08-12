@@ -126,7 +126,7 @@ export default {
     gsap.from('.third-container-buttons span',{
         scrollTrigger:{
             trigger:'.third-container-buttons',
-            start:'top 95%',
+            start:'top 70%',
             toggleActions:"play pause resume reverse"
         },
         opacity:0,
@@ -135,6 +135,7 @@ export default {
         delay:0.5,
         x:-100
     })
+    ScrollTrigger.refresh();
   },
 };
 </script>
