@@ -43,14 +43,23 @@ export default {
     });
     timeline.fromTo(
       ".fourthPage-main-title",
-      { x: 0, opacity: 0 },
+      { xPercent: 0, opacity: 0 },
       {
         xPercent: -70,
         opacity: 1,
       },
       "+=0.6"
     );
-    timeline.to(".service-span", {
+    timeline.to(".s1", {
+      opacity: 1,
+    });
+    timeline.to(".s2", {
+      opacity: 1,
+    });
+    timeline.to(".s3", {
+      opacity: 1,
+    });
+    timeline.to(".s4", {
       opacity: 1,
     });
   },

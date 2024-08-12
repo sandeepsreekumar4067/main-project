@@ -1,5 +1,5 @@
 .fourth-page-container{
-    height: 190vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -19,16 +19,17 @@
     font-size: 3.3rem;
     font-weight: 500;
     position: absolute;
+    opacity: 0;
 }
 .fourthPage-circle-container {
     height: 24rem;
     width: 24rem;
     background-color: var(--grey);
-    border-radius: 50%;
     position: relative;
     overflow: visible;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 30px;
 }
 
 .service-span {
