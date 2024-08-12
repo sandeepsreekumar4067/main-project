@@ -1,8 +1,11 @@
 <template>
   <div class="fourth-page-container" id="main">
     <div class="fourth-page-components" id="comp">
-      <div class="fourthPage-main-title">Our Services</div>
+      <div class="fourthPage-main-title">Our Services...</div>
       <div class="fourthPage-circle-container">
+        <div class="fourth-page-centre-circle">
+            
+        </div>
         <span class="service-span s1">
           <div class="circular-text">Service 1</div>
         </span>
@@ -15,6 +18,7 @@
         <span class="service-span s4">
           <div class="circular-text">Service 4</div>
         </span>
+        
       </div>
     </div>
   </div>
