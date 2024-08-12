@@ -7,16 +7,16 @@
             
         </div>
         <span class="service-span s1">
-          <div class="circular-text">Service 1</div>
+          <div class="circular-text">Legal Advice Chat Bot</div>
         </span>
         <span class="service-span s2">
-          <div class="circular-text">Service 2</div>
+          <div class="circular-text">Live Chat with Human Experts</div>
         </span>
         <span class="service-span s3">
-          <div class="circular-text">Service 3</div>
+          <div class="circular-text">Legal Compliance Checker</div>
         </span>
         <span class="service-span s4">
-          <div class="circular-text">Service 4</div>
+          <div class="circular-text">Appointment Scheduling</div>
         </span>
         
       </div>
