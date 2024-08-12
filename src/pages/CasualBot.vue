@@ -4,7 +4,7 @@
       <div class="Casualbot-chat-interface">
         <div class="Casualbot-message-block">
           <div
-            class="Casualbot-message"
+            :class="['Casualbot-message',{system:!text.user}]"
             v-for="(text, index) in chatarray"
             :key="index"
           >
@@ -39,7 +39,10 @@ export default {
   },
   methods: {
     systemResponse(){
-
+        this.chatarray.push({
+            "message":"system response",
+            "user":false
+        })
     },
     sendMessage() {
       if (this.userInput.trim() !== "") {
@@ -49,6 +52,7 @@ export default {
                 "user":true
             }
         );
+        this.systemResponse()
         this.userInput = "";
       }
     },
