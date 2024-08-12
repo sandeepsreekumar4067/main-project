@@ -52,7 +52,6 @@ export default {
         xPercent: -70,
         opacity: 1,
       },
-      "+=0.6"
     );
     timeline.to(".s1", {
       opacity: 1,
@@ -66,7 +65,54 @@ export default {
     timeline.to(".s4", {
       opacity: 1,
     });
-    
+    timeline.to(
+      ".s1",
+      {
+        opacity: 1,
+        xPercent:-20,
+        yPercent:-20,
+        scale: 1.2,
+        duration: 1,
+        ease: "power2.out",
+      },
+      "-=0.5"
+    );
+    timeline.to(
+      ".s2",
+      {
+        opacity: 1,
+        xPercent:20,
+        yPercent:-20,
+        scale: 1.2,
+        duration: 1,
+        ease: "power2.out",
+      },
+      "-=0.5"
+    );
+    timeline.to(
+      ".s3",
+      {
+        opacity: 1,
+        xPercent:-20,
+        yPercent:20,
+        scale: 1.2,
+        duration: 1,
+        ease: "power2.out",
+      },
+      "-=0.5"
+    );
+    timeline.to(
+      ".s4",
+      {
+        opacity: 1,
+        xPercent:20,
+        yPercent:20,
+        scale: 1.2,
+        duration: 1,
+        ease: "power2.out",
+      },
+      "-=0.5"
+    );
   },
 };
 </script>
