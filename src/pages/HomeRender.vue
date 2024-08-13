@@ -17,7 +17,7 @@ export default {
         HomePage,
         SecondPage,
         ThirdPage,
-        FourthPage
+        FourthPage,
     }
 }
 </script>
