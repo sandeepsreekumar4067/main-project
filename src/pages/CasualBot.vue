@@ -17,18 +17,25 @@
             type="text"
             placeholder="Ask me questions..."
             @keyup.enter="sendMessage"
-            :disabled="isDisabled" 
+            :disabled="isDisabled"
           />
-          <div class="button" @click="sendMessage" :class="{ disabled: isDisabled }">
+          <div
+            class="button"
+            @click="sendMessage"
+            :class="{ disabled: isDisabled }"
+          >
             <i class="bi bi-send"></i>
           </div>
         </div>
       </div>
       <div class="Casualbot-interaction-block">
-        <span v-show="primary">Hello</span>
-        <div v-show="!primary">
-          <span v-if="status">Here is the Answer</span>
-          <span v-else>Thinking</span>
+        <span>Lawyer Bot</span>
+        <div class="status-area">
+          <div v-show="primary">Hello</div>
+          <div v-show="!primary">
+            <div v-if="status">Here is the Answer</div>
+            <div v-else>Thinking</div>
+          </div>
         </div>
       </div>
     </div>

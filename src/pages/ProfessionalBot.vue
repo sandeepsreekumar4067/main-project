@@ -25,10 +25,13 @@
         </div>
       </div>
       <div class="professionalbot-interaction-block">
-        <span v-show="primary">Hello</span>
-        <div v-show="!primary">
-          <span v-if="status">Here is the Answer</span>
-          <span v-else>Thinking</span>
+        <span>Legal Bot</span>
+        <div class="status-area">
+          <div v-show="primary">Hello</div>
+          <div v-show="!primary">
+            <div v-if="status">Here is the Answer</div>
+            <div v-else>Thinking</div>
+          </div>
         </div>
       </div>
     </div>

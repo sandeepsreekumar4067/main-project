@@ -33,7 +33,6 @@
           insights, case analysis, and research support to help you build
           stronger cases and streamline your legal practice.
         </div>
-        <a href="#">chat.....</a>
       </div>
     </div>
   </div>
