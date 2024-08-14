@@ -1,9 +1,109 @@
 <template>
-  helo
+  <div class="professional-bot-container">
+    <div class="professional-bot-components">
+      <div class="professionalbot-chat-interface">
+        <div class="professionalbot-message-block">
+          <div
+            :class="['professionalbot-message', { system: !text.user }]"
+            v-for="(text, index) in chatarray"
+            :key="index"
+          >
+            {{ text.message }}
+          </div>
+        </div>
+        <div :class="['professionalbot-input-container', { disabled: isDisabled }]">
+          <input
+            v-model="userInput"
+            type="text"
+            placeholder="Ask me questions..."
+            @keyup.enter="sendMessage"
+            :disabled="isDisabled" 
+          />
+          <div class="button" @click="sendMessage" :class="{ disabled: isDisabled }">
+            <i class="bi bi-send"></i>
+          </div>
+        </div>
+      </div>
+      <div class="professionalbot-interaction-block">
+        <span v-show="primary">Hello</span>
+        <div v-show="!primary">
+          <span v-if="status">Here is the Answer</span>
+          <span v-else>Thinking</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import '../style/professionalBot.css'
+import { gsap } from "gsap";
 export default {
-    name:'ProfessionalBot'
-}
+  data() {
+    return {
+      chatarray: [],
+      userInput: "",
+      status: false,
+      primary: true,
+      isDisabled: false, // This controls the disabled state
+    };
+  },
+  methods: {
+    systemResponse() {
+      this.primary = false;
+      this.status = false;
+      this.isDisabled = true; // Disable the input and button
+
+      console.log("req sent");
+      fetch("http://127.0.0.1:5000/ask", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          question: this.userInput.toString(),
+        }),
+      })
+        .then((res) => {
+          if (!res.ok) {
+            this.status = res.status;
+            throw new Error("response failed");
+          }
+          return res.json();
+        })
+        .then((data) => {
+          console.log("success");
+          this.status = data.status;
+          console.log(data.status);
+          this.chatarray.push({
+            message: data.response,
+            user: false,
+          });
+          this.isDisabled = false; // Re-enable the input and button
+        })
+        .catch((err) => {
+          console.log(err);
+          this.isDisabled = false; // Ensure the input is re-enabled even if there's an error
+        });
+    },
+    sendMessage() {
+      if (this.userInput.trim() !== "") {
+        this.chatarray.push({
+          message: this.userInput,
+          user: true,
+        });
+        this.systemResponse();
+        this.userInput = "";
+      }
+    },
+  },
+  mounted() {
+    gsap.from(".professionalbot-input-container", {
+      yPercent: -1000,
+      opacity: 0,
+      duration: 1,
+      ease: "bounce.out",
+    });
+  },
+};
 </script>

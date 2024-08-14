@@ -21,6 +21,8 @@
         class="botCards"
         @mouseenter="colorSpread($event)"
         @mouseleave="reverseColorSpread($event)"
+        @click="()=>{this.$router.push('/professional-bot')}"
+
       >
         <div class="bot-title">Lawyer Consultant</div>
         <div class="bot-image">
