@@ -30,6 +30,7 @@
 
 <script>
 import "../style/casualbot.css";
+import {gsap} from 'gsap'
 export default {
   data() {
     return {
@@ -75,8 +76,13 @@ export default {
       }
     },
   },
+  mounted(){
+    gsap.from('.Causalbot-input-container',{
+      yPercent:-1000,
+      opacity:0,
+      duration:1,
+      ease:'bounce.out'
+    })
+  }
 };
 </script>
-
-<style>
-</style>
