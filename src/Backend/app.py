@@ -23,16 +23,16 @@ def ask_question():
     print("recieved the query..")
     if not question:
         print("failed")
-        return jsonify({'error': 'No question provided'}), 400
+        return jsonify({'error': 'No question provided' , 'status':False}), 400
 
     # Invoke the chain with the provided question
     try:
-        print("response sent..")
         res = chain.invoke({'question': question})
-        return jsonify({'response': res}), 200
+        print("response sent..")
+        return jsonify({'response': res, 'status':True}), 200
     except Exception as e:
         print("failed 2 ..")
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'error': str(e), 'status':False}), 500
 
 if __name__ == '__main__':
     print("model online...\n")
