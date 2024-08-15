@@ -35,7 +35,8 @@ export default {
 
     tl.to(".fifthpage-object", {
       xPercent: 150,
-      borderRadius: '100%',
+      borderRadius: '50%',
+      duration:1,
       rotate: 360,
     });
 
@@ -43,47 +44,55 @@ export default {
     tl.to(
       "#s15",
       {
+        borderTopLeftRadius:'100%'
+      },
+        "-=0.75"
+    ).to('#s15',{
         xPercent: -50, // Move left
         yPercent: -50, // Move up
         duration: 1,
         width: "75%",
         borderRadius: "50%",
-      }
-      //   "-=0.5"
-    );
+    })
     tl.to(
       "#s25",
       {
+        borderTopRightRadius:'100%'
+      },
+        "-=1.75"
+    ).to('#s25',{
         xPercent: 50, // Move right
         yPercent: -50, // Move up
         duration: 1,
         width: "75%",
         borderRadius: "50%",
-      }
-      //   "-=0.75"
-    );
+    })
     tl.to(
       "#s35",
       {
+        borderBottomLeftRadius:'100%'
+      },
+        "-=2.75"
+    ).to('#s35',{
         xPercent: -50, // Move left
         yPercent: 50, // Move down
         duration: 1,
         width:'75%',
         borderRadius:'50%' 
-      }
-      //   "-=1"
-    );
+    })
     tl.to(
       "#s45",
       {
+       borderBottomRightRadius:'100%'
+      },
+        "-=3.75"
+    ).to('#s45',{
         xPercent: 50, // Move right
         yPercent: 50, // Move down
         duration: 1,
         width:'75%',
         borderRadius:'50%' 
-      }
-      //   "-=1.25"
-    );
+    })
   },
 };
 </script>
