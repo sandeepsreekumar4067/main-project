@@ -3,14 +3,14 @@
     <div class="fifthpage-object-container">
       <div class="fifthpage-object">
         <div class="pseudo-circle"></div>
-        <span id="s15"></span>
-        <span id="s25"></span>
-        <span id="s35"></span>
-        <span id="s45"></span>
-        <span id="s55"></span>
-        <span id="s65"></span>
-        <span id="s75"></span>
-        <span id="s85"></span>
+        <span class="s5" id="s15"></span>
+        <span class="s5" id="s25"></span>
+        <span class="s5" id="s35"></span>
+        <span class="s5" id="s45"></span>
+        <span class="s5" id="s55"></span>
+        <span class="s5" id="s65"></span>
+        <span class="s5" id="s75"></span>
+        <span class="s5" id="s85"></span>
       </div>
     </div>
   </div>
