@@ -21,16 +21,6 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
   name: "FifthPage",
   mounted() {
-    // gsap.from('.fifthpage-object',{
-    //     scrollTrigger:{
-    //         trigger:'.fifth-page-container',
-    //         start:'top 50%'
-    //     },
-    //     xPercent:500,
-    //     opacity:0,
-    //     ease:'bounce.out',
-    //     duration:2.5
-    // })
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".fifthpage-object-container",
@@ -74,7 +64,10 @@ export default {
       xPercent: 50, // Move right
       yPercent: -50, // Move up
       duration: 1,
-    });
+    }).to('#s25',{
+        borderTopRightRadius: "0%",
+        
+    },'-=1')
     tl.to(
       "#s35",
       {
@@ -85,7 +78,10 @@ export default {
       xPercent: -50, // Move left
       yPercent: 50, // Move down
       duration: 1,
-    });
+    }).to('#s35',{
+        borderBottomLeftRadius: "0%",
+        
+    },'-=1.25')
     tl.to(
       "#s45",
       {
@@ -96,7 +92,10 @@ export default {
       xPercent: 50, // Move right
       yPercent: 50, // Move down
       duration: 1,
-    });
+    }).to('#s45',{
+        borderBottomRightRadius: "0%",
+        
+    },'-=1.5')
   },
 };
 </script>
