@@ -14,7 +14,6 @@
           <div class="circular-text">Legal Compliance Checker</div>
         </span>
         <span class="service-span s4">
-          <div class="circular-text">Appointment Scheduling</div>
         </span>
       </div>
     </div>
