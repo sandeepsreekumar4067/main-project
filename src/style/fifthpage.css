@@ -17,14 +17,7 @@
     justify-content: end;
 }
 
-.fifthpage-object {
-    height: 25rem;
-    width: 25rem;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 4rem;
-}
+
 .pseudo-circle{
     height: 100%;
     width: 100%;
@@ -97,3 +90,30 @@
     background-color: #9A9AA4;
     /* Much lighter shade */
 }
+.pseudoSpan{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+}
+
+.spoke {
+
+  position: absolute;
+  background-color: black;
+  width: 2px;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+/* Static positioning for 8 equally spaced spokes */
+.spoke-1 { transform: translate(-50%, -100%) rotate(0deg); }
+.spoke-2 { transform: translate(-50%, -100%) rotate(45deg); }
+.spoke-3 { transform: translate(-50%, -100%) rotate(90deg); }
+.spoke-4 { transform: translate(-50%, -100%) rotate(135deg); }
+.spoke-5 { transform: translate(-50%, -100%) rotate(180deg); }
+.spoke-6 { transform: translate(-50%, -100%) rotate(225deg); }
+.spoke-7 { transform: translate(-50%, -100%) rotate(270deg); }
+.spoke-8 { transform: translate(-50%, -100%) rotate(315deg); }
