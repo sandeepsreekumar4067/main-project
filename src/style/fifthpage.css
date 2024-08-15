@@ -1,5 +1,5 @@
 .fifth-page-container {
-    height: 500vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: start;
@@ -29,7 +29,7 @@
     width: 25rem;
     position: relative;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .fifthpage-object span {
@@ -45,41 +45,40 @@
 
 #s15 {
     transform: rotate(0deg);
-    background-color: red;
+    background-color: #59595F; /* Darker shade */
 }
 
 #s25 {
     transform: rotate(45deg);
-    background-color: green;
+    background-color: #71717A; /* Lighter shade */
 }
 
 #s35 {
     transform: rotate(90deg);
-    background-color: blue;
-
+    background-color: #4D4D54; /* Darker, muted shade */
 }
 
 #s45 {
     transform: rotate(135deg);
-    background-color: yellow;
+    background-color: #7D7D87; /* Lighter, vibrant shade */
 }
 
 #s55 {
     transform: rotate(180deg);
-    background-color: orange;
+    background-color: #53535B; /* Darker, cooler shade */
 }
 
 #s65 {
     transform: rotate(225deg);
-    background-color: white;
+    background-color: #85858F; /* Lighter, warmer shade */
 }
 
 #s75 {
     transform: rotate(270deg);
-    background-color: pink;
+    background-color: #3F3F45; /* Much darker shade */
 }
 
 #s85 {
     transform: rotate(315deg);
-    background-color: violet;
+    background-color: #9A9AA4; /* Much lighter shade */
 }
