@@ -94,15 +94,30 @@
     height: 100%;
     width: 100%;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0 ;
 }
-
+#pst{
+    height: 75%;
+    width: 70%;
+    background-color:var(--bodyBg);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    opacity: 0;
+}
 .spoke {
-
   position: absolute;
   background-color: black;
   width: 2px;
-  height: 150%;
+  height: 150;
+  height: 0;
   top: 50%;
   left: 50%;
   transform-origin: bottom center;
@@ -110,10 +125,10 @@
 
 /* Static positioning for 8 equally spaced spokes */
 .spoke-1 { transform: translate(-50%, -100%) rotate(0deg); }
-.spoke-2 { transform: translate(-50%, -100%) rotate(45deg); }
+.spoke-2 { transform: translate(-50%, -100%) rotate(67.5deg); }
 .spoke-3 { transform: translate(-50%, -100%) rotate(90deg); }
-.spoke-4 { transform: translate(-50%, -100%) rotate(135deg); }
+.spoke-4 { transform: translate(-50%, -100%) rotate(112.5deg); }
 .spoke-5 { transform: translate(-50%, -100%) rotate(180deg); }
-.spoke-6 { transform: translate(-50%, -100%) rotate(225deg); }
+.spoke-6 { transform: translate(-50%, -100%) rotate(247.5deg); }
 .spoke-7 { transform: translate(-50%, -100%) rotate(270deg); }
-.spoke-8 { transform: translate(-50%, -100%) rotate(315deg); }
+.spoke-8 { transform: translate(-50%, -100%) rotate(292.5deg); }

@@ -9,6 +9,7 @@
         <span class="s5" id="s45"></span>
         <span class="s5" id="s55">
           <div class="pseudoSpan">
+            <div id="pst">Our Features</div>
             <div class="spoke spoke-1"></div>
             <div class="spoke spoke-2"></div>
             <div class="spoke spoke-3"></div>
@@ -87,12 +88,12 @@ export default {
       borderRadius: "20px",
     });
     tl.to("#s55", {
-      xPercent: -180,
+      xPercent: -138.5,
       rotate: 0,
-      yPercent: 50,
-      width: "100%",
+      yPercent: 33,
+      width: "36rem",
+      height:'15rem',
       clipPath: "none",
-      borderRadius: "20px",
       duration: 1,
       backgroundColor: "transparent",
     });
@@ -126,6 +127,9 @@ export default {
       yPercent: 160,
       height: "50%",
     });
+    tl.to('.pseudoSpan',{
+        opacity:1
+    }).to('#pst',{opacity:1}).to('.spoke',{height:'150%'})
   },
 };
 </script>
