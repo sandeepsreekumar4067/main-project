@@ -21,6 +21,16 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
   name: "FifthPage",
   mounted() {
+    // gsap.from('.fifthpage-object',{
+    //     scrollTrigger:{
+    //         trigger:'.fifth-page-container',
+    //         start:'top 50%'
+    //     },
+    //     xPercent:500,
+    //     opacity:0,
+    //     ease:'bounce.out',
+    //     duration:2.5
+    // })
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".fifthpage-object-container",
@@ -33,10 +43,9 @@ export default {
       },
     });
 
-    tl.to(".fifthpage-object", {
-      xPercent: 150,
-      borderRadius: '50%',
-      duration:1,
+    tl.from(".fifthpage-object", {
+      xPercent: 500,
+      duration: 1,
       rotate: 360,
     });
 
@@ -44,55 +53,50 @@ export default {
     tl.to(
       "#s15",
       {
-        borderTopLeftRadius:'100%'
+        borderTopLeftRadius: "100%",
       },
-        "-=0.75"
-    ).to('#s15',{
-        xPercent: -50, // Move left
-        yPercent: -50, // Move up
-        duration: 1,
-        width: "75%",
-        borderRadius: "50%",
-    })
+      "-=0.75"
+    ).to("#s15", {
+      xPercent: -50, // Move left
+      yPercent: -50, // Move up
+      duration: 1,
+    }).to('#s15',{
+        borderTopLeftRadius: "0%",
+        
+    },'-=0.75')
     tl.to(
       "#s25",
       {
-        borderTopRightRadius:'100%'
+        borderTopRightRadius: "100%",
       },
-        "-=1.75"
-    ).to('#s25',{
-        xPercent: 50, // Move right
-        yPercent: -50, // Move up
-        duration: 1,
-        width: "75%",
-        borderRadius: "50%",
-    })
+      "-=1.75"
+    ).to("#s25", {
+      xPercent: 50, // Move right
+      yPercent: -50, // Move up
+      duration: 1,
+    });
     tl.to(
       "#s35",
       {
-        borderBottomLeftRadius:'100%'
+        borderBottomLeftRadius: "100%",
       },
-        "-=2.75"
-    ).to('#s35',{
-        xPercent: -50, // Move left
-        yPercent: 50, // Move down
-        duration: 1,
-        width:'75%',
-        borderRadius:'50%' 
-    })
+      "-=2.75"
+    ).to("#s35", {
+      xPercent: -50, // Move left
+      yPercent: 50, // Move down
+      duration: 1,
+    });
     tl.to(
       "#s45",
       {
-       borderBottomRightRadius:'100%'
+        borderBottomRightRadius: "100%",
       },
-        "-=3.75"
-    ).to('#s45',{
-        xPercent: 50, // Move right
-        yPercent: 50, // Move down
-        duration: 1,
-        width:'75%',
-        borderRadius:'50%' 
-    })
+      "-=3.75"
+    ).to("#s45", {
+      xPercent: 50, // Move right
+      yPercent: 50, // Move down
+      duration: 1,
+    });
   },
 };
 </script>

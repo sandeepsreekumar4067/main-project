@@ -10,12 +10,15 @@
     height: 25rem;
     width: 100%;
     overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fifthpage-object {
     height: 25rem;
     width: 25rem;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     position: relative;
     display: flex;
     overflow: visible;
