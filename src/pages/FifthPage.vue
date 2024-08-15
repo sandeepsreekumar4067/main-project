@@ -65,7 +65,7 @@ export default {
         yPercent:-60,
         width:'100%',
         clipPath:'none',
-        borderRadius:'20px'
+        borderRadius:'20px',
       })
       tl.to('#s45',{
         xPercent:-300,
@@ -81,7 +81,9 @@ export default {
         yPercent:50,
         width:'100%',
         clipPath:'none',
-        borderRadius:'20px'
+        borderRadius:'20px',
+        backgroundColor:'transparent'
+
       })
       tl.to('#s65',{
         xPercent:-55,
