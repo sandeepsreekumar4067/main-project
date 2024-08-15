@@ -52,7 +52,7 @@ export default {
       .to("#s15", { color: "white" })
       .to("#s15", { xPercent: -450, opacity: 0, scale: 1 });
     tl.to(".fifthpage-object", {
-      rotate: 45,
+      rotate: 360,
     });
     tl.to("#s25", {
       duration: 0.8,
@@ -67,7 +67,7 @@ export default {
       .to("#s25", { color: "white" })
       .to("#s25", { xPercent: -450, opacity: 0, scale: 1 });
       tl.to(".fifthpage-object", {
-      rotate: 45,
+      rotate: 720,
     });
     tl.to("#s35", {
       duration: 0.8,
@@ -81,6 +81,9 @@ export default {
     })
       .to("#s35", { color: "white" })
       .to("#s35", { xPercent: -450, opacity: 0, scale: 1 });
+      tl.to(".fifthpage-object", {
+      rotate: 1080,
+    });
     tl.to("#s45", {
       duration: 0.8,
       xPercent: -250,
@@ -93,6 +96,9 @@ export default {
     })
       .to("#s45", { color: "white" })
       .to("#s45", { xPercent: -450, opacity: 0, scale: 1 });
+      tl.to(".fifthpage-object", {
+      rotate: 1440,
+    });
     tl.to("#s55", {
       duration: 0.8,
       xPercent: -250,
@@ -105,6 +111,9 @@ export default {
     })
       .to("#s55", { color: "white" })
       .to("#s55", { xPercent: -450, opacity: 0, scale: 1 });
+      tl.to(".fifthpage-object", {
+      rotate: 1800,
+    });
     tl.to("#s65", {
       duration: 0.8,
       xPercent: -250,
@@ -117,6 +126,9 @@ export default {
     })
       .to("#s65", { color: "white" })
       .to("#s65", { xPercent: -450, opacity: 0, scale: 1 });
+      tl.to(".fifthpage-object", {
+      rotate: 2160,
+    });
     tl.to("#s75", {
       duration: 0.8,
       xPercent: -250,
@@ -141,6 +153,9 @@ export default {
     })
       .to("#s85", { color: "white" })
       .to("#s85", { xPercent: -450, opacity: 0, scale: 1 });
+      tl.to(".fifthpage-object", {
+      rotate: 0,
+    });
   },
 };
 </script>

@@ -1,5 +1,5 @@
 .fifth-page-container {
-    height: 800vh;
+    height: 1000vh;
     width: 100%;
     display: flex;
     align-items: start;
@@ -35,7 +35,7 @@
     position: relative;
     border-radius: 50%;
     overflow: visible;
-    margin-right: 8rem;
+    margin-right: 8%;
 }
 
 .fifthpage-object span {
