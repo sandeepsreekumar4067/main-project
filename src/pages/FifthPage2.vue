@@ -35,7 +35,6 @@ export default {
         end: "bottom bottom",
       },
     });
-
     tl.from(".fifthpage-object", {
       xPercent: 500,
       duration: 1,
@@ -52,6 +51,9 @@ export default {
     })
       .to("#s15", { color: "white" })
       .to("#s15", { xPercent: -450, opacity: 0, scale: 1 });
+    tl.to(".fifthpage-object", {
+      rotate: 45,
+    });
     tl.to("#s25", {
       duration: 0.8,
       xPercent: -250,
@@ -64,6 +66,9 @@ export default {
     })
       .to("#s25", { color: "white" })
       .to("#s25", { xPercent: -450, opacity: 0, scale: 1 });
+      tl.to(".fifthpage-object", {
+      rotate: 45,
+    });
     tl.to("#s35", {
       duration: 0.8,
       xPercent: -250,
