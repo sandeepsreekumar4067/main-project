@@ -45,57 +45,59 @@ export default {
       {
         borderTopLeftRadius: "100%",
       },
-      "-=0.75"
+      "-=0.5"
     ).to("#s15", {
-      xPercent: -50, // Move left
+      xPercent: -70, // Move left
       yPercent: -50, // Move up
       duration: 1,
     }).to('#s15',{
         borderTopLeftRadius: "0%",
         
-    },'-=0.75')
+    },'-=0.75').to('#s15',{
+      width:'100%',
+    })
     tl.to(
       "#s25",
       {
         borderTopRightRadius: "100%",
       },
-      "-=1.75"
+      "-=2"
     ).to("#s25", {
-      xPercent: 50, // Move right
+      xPercent: 70, // Move right
       yPercent: -50, // Move up
       duration: 1,
     }).to('#s25',{
         borderTopRightRadius: "0%",
         
-    },'-=1')
+    },'-=1').to('#s25',{width:'100%'})
     tl.to(
       "#s35",
       {
         borderBottomLeftRadius: "100%",
       },
-      "-=2.75"
+      "-=3.5"
     ).to("#s35", {
-      xPercent: -50, // Move left
+      xPercent: -70, // Move left
       yPercent: 50, // Move down
       duration: 1,
     }).to('#s35',{
         borderBottomLeftRadius: "0%",
         
-    },'-=1.25')
+    },'-=1.25').to('#s35',{width:'100%'})
     tl.to(
       "#s45",
       {
         borderBottomRightRadius: "100%",
       },
-      "-=3.75"
+      "-=5"
     ).to("#s45", {
-      xPercent: 50, // Move right
+      xPercent: 70, // Move left
       yPercent: 50, // Move down
       duration: 1,
     }).to('#s45',{
         borderBottomRightRadius: "0%",
         
-    },'-=1.5')
+    },'-=1.25').to('#s45',{width:'100%'})
   },
 };
 </script>
