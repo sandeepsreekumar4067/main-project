@@ -1,0 +1,145 @@
+.fifth-page-container {
+    height: 800vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.fifthpage-object-container {
+    height: 25rem;
+    width: 100%;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.pseudo-circle{
+    height: 100%;
+    width: 100%;
+    background-color: var(--grey);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--grey);
+    justify-content: center;
+}
+.fifthpage-object {
+    height: 25rem;
+    width: 25rem;
+    position: relative;
+    border-radius: 50%;
+    overflow: visible;
+    margin-right: 5rem;
+}
+
+.fifthpage-object span {
+    position: absolute;
+    height: 50%;
+    font-size: 1.3rem;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    transform-origin: 0 100%;
+    /* Adjust the color as needed */
+    clip-path: polygon(0 0, 100% 0, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s15 {
+    transform: rotate(0deg);
+    background-color: #59595F;
+    color: #59595F; /* Matches the background color */
+}
+
+#s25 {
+    transform: rotate(45deg);
+    background-color: #71717A;
+    color: #71717A; /* Matches the background color */
+}
+
+#s35 {
+    transform: rotate(90deg);
+    background-color: #4D4D54;
+    color: #4D4D54; /* Matches the background color */
+}
+
+#s45 {
+    transform: rotate(135deg);
+    background-color: #7D7D87;
+    color: #7D7D87; /* Matches the background color */
+}
+
+#s55 {
+    transform: rotate(180deg);
+    background-color: #53535B;
+    color: #53535B;
+}
+
+#s65 {
+    transform: rotate(225deg);
+    background-color: #85858F;
+    color: #85858F; /* Matches the background color */
+}
+
+#s75 {
+    transform: rotate(270deg);
+    background-color: #3F3F45;
+    color: #3F3F45; /* Matches the background color */
+}
+
+#s85 {
+    transform: rotate(315deg);
+    background-color: #9A9AA4;
+    color: #9A9AA4; /* Matches the background color */
+}
+
+.pseudoSpan{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0 ;
+}
+#pst{
+    height: 75%;
+    width: 70%;
+    background-color:var(--bodyBg);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    opacity: 0;
+}
+.spoke {
+  position: absolute;
+  background-color: black;
+  width: 2px;
+  height: 150;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+/* Static positioning for 8 equally spaced spokes */
+.spoke-1 { transform: translate(-50%, -100%) rotate(0deg); }
+.spoke-2 { transform: translate(-50%, -100%) rotate(67.5deg); }
+.spoke-3 { transform: translate(-50%, -100%) rotate(90deg); }
+.spoke-4 { transform: translate(-50%, -100%) rotate(112.5deg); }
+.spoke-5 { transform: translate(-50%, -100%) rotate(180deg); }
+.spoke-6 { transform: translate(-50%, -100%) rotate(247.5deg); }
+.spoke-7 { transform: translate(-50%, -100%) rotate(270deg); }
+.spoke-8 { transform: translate(-50%, -100%) rotate(292.5deg); }
