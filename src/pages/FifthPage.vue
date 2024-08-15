@@ -2,6 +2,7 @@
   <div class="fifth-page-container">
     <div class="fifthpage-object-container">
       <div class="fifthpage-object">
+        <div class="pseudo-circle"></div>
         <span id="s15"></span>
         <span id="s25"></span>
         <span id="s35"></span>
@@ -59,13 +60,60 @@ export default {
         borderRadius:'20px'
       })
       tl.to('#s35',{
-        xPercent:-180,
+        xPercent:-55,
         rotate:0,
         yPercent:-60,
         width:'100%',
         clipPath:'none',
         borderRadius:'20px'
       })
+      tl.to('#s45',{
+        xPercent:-300,
+        rotate:0,
+        yPercent:50,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
+      tl.to('#s55',{
+        xPercent:-180,
+        rotate:0,
+        yPercent:50,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
+      tl.to('#s65',{
+        xPercent:-55,
+        rotate:0,
+        yPercent:50,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
+      tl.to('#s75',{
+        xPercent:-300,
+        rotate:0,
+        yPercent:160,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
+      tl.to('#s85',{
+        xPercent:-180,
+        rotate:0,
+        yPercent:160,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
+      tl.to('.pseudo-circle',{
+        borderRadius:'20px',
+        xPercent:-5,
+        yPercent:160,
+        height:'50%',
+        
+    })
     },
 };
 </script>

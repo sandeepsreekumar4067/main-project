@@ -1,5 +1,5 @@
 .fifth-page-container {
-    height: 200vh;
+    height: 400vh;
     width: 100%;
     display: flex;
     align-items: start;
@@ -9,7 +9,6 @@
 }
 
 .fifthpage-object-container {
-
     height: 25rem;
     width: 100%;
     overflow: visible;
@@ -26,7 +25,12 @@
     overflow: hidden;
     margin-right: 4rem;
 }
-
+.pseudo-circle{
+    height: 100%;
+    width: 100%;
+    background-color: var(--grey);
+    border-radius: 50%;
+}
 .fifthpage-object {
     height: 25rem;
     width: 25rem;
