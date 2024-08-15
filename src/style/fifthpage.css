@@ -1,5 +1,5 @@
 .fifth-page-container {
-    height: 400vh;
+    height: 650vh;
     width: 100%;
     display: flex;
     align-items: start;
@@ -23,6 +23,11 @@
     width: 100%;
     background-color: var(--grey);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--grey);
+    justify-content: center;
 }
 .fifthpage-object {
     height: 25rem;
@@ -35,61 +40,65 @@
 .fifthpage-object span {
     position: absolute;
     height: 50%;
+    font-size: 1.3rem;
     width: 50%;
     top: 0;
     left: 50%;
     transform-origin: 0 100%;
     /* Adjust the color as needed */
     clip-path: polygon(0 0, 100% 0, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #s15 {
     transform: rotate(0deg);
     background-color: #59595F;
-    /* Darker shade */
+    color: #59595F; /* Matches the background color */
 }
 
 #s25 {
     transform: rotate(45deg);
     background-color: #71717A;
-    /* Lighter shade */
+    color: #71717A; /* Matches the background color */
 }
 
 #s35 {
     transform: rotate(90deg);
     background-color: #4D4D54;
-    /* Darker, muted shade */
+    color: #4D4D54; /* Matches the background color */
 }
 
 #s45 {
     transform: rotate(135deg);
     background-color: #7D7D87;
-    /* Lighter, vibrant shade */
+    color: #7D7D87; /* Matches the background color */
 }
 
 #s55 {
     transform: rotate(180deg);
     background-color: #53535B;
-    /* Darker, cooler shade */
 }
 
 #s65 {
     transform: rotate(225deg);
     background-color: #85858F;
-    /* Lighter, warmer shade */
+    color: #85858F; /* Matches the background color */
 }
 
 #s75 {
     transform: rotate(270deg);
     background-color: #3F3F45;
-    /* Much darker shade */
+    color: #3F3F45; /* Matches the background color */
 }
 
 #s85 {
     transform: rotate(315deg);
     background-color: #9A9AA4;
-    /* Much lighter shade */
+    color: #9A9AA4; /* Matches the background color */
 }
+
 .pseudoSpan{
     height: 100%;
     width: 100%;

@@ -2,11 +2,11 @@
   <div class="fifth-page-container">
     <div class="fifthpage-object-container">
       <div class="fifthpage-object">
-        <div class="pseudo-circle"></div>
-        <span class="s5" id="s15"></span>
-        <span class="s5" id="s25"></span>
-        <span class="s5" id="s35"> </span>
-        <span class="s5" id="s45"></span>
+        <div class="pseudo-circle">Legal Outcome Prediction</div>
+        <span class="s5" id="s15">User-Friendly Interface</span>
+        <span class="s5" id="s25">Legal Outcome Prediction</span>
+        <span class="s5" id="s35">24/7 Availability</span>
+        <span class="s5" id="s45"> Personalized Legal Consultations</span>
         <span class="s5" id="s55">
           <div class="pseudoSpan">
             <div id="pst">Our Features</div>
@@ -20,9 +20,9 @@
             <div class="spoke spoke-8"></div>
           </div>
         </span>
-        <span class="s5" id="s65"></span>
-        <span class="s5" id="s75"></span>
-        <span class="s5" id="s85"></span>
+        <span class="s5" id="s65">Confidential and Secure</span>
+        <span class="s5" id="s75">Real-Time AI Processing</span>
+        <span class="s5" id="s85">Multilingual Support</span>
       </div>
     </div>
   </div>
@@ -44,7 +44,6 @@ export default {
         scrub: 1,
         start: "top 30%",
         pin: true,
-        markers: true,
         endTrigger: ".fifth-page-container",
         end: "bottom bottom",
       },
@@ -92,7 +91,7 @@ export default {
       rotate: 0,
       yPercent: 33,
       width: "36rem",
-      height:'15rem',
+      height: "15rem",
       clipPath: "none",
       duration: 1,
       backgroundColor: "transparent",
@@ -127,9 +126,19 @@ export default {
       yPercent: 160,
       height: "50%",
     });
-    tl.to('.pseudoSpan',{
-        opacity:1
-    }).to('#pst',{opacity:1}).to('.spoke',{height:'150%'})
+    tl.to(".pseudoSpan", {
+      opacity: 1,
+    })
+      .to("#pst", { opacity: 1 })
+      .to(".spoke", { height: "180%" });
+    tl.to('#s15',{color:'white'})
+    tl.to('#s25',{color:'white'})
+    tl.to('#s35',{color:'white'})
+    tl.to('#s45',{color:'white'})
+    tl.to('#s65',{color:'white'})
+    tl.to('#s75',{color:'white'})
+    tl.to('#s85',{color:'white'})
+    tl.to('.pseudo-circle',{color:'white'})
   },
 };
 </script>
