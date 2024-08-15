@@ -1,9 +1,9 @@
 <template>
   <HomePage/>
   <SecondPage/>
+  <FifthPage2/>
   <FourthPage/>
   <ThirdPage/>
-  <FifthPage2/>
 </template>
 
 <script>
