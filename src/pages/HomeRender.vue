@@ -3,9 +3,11 @@
   <SecondPage/>
   <FourthPage/>
   <ThirdPage/>
+  <FifthPage/>
 </template>
 
 <script>
+import FifthPage from './FifthPage.vue';
 import FourthPage from './FourthPage.vue';
 import HomePage from './HomePage.vue';
 import SecondPage from './SecondPage.vue';
@@ -18,6 +20,7 @@ export default {
         SecondPage,
         ThirdPage,
         FourthPage,
+        FifthPage
     }
 }
 </script>

@@ -1,0 +1,58 @@
+.fifth-page-container {
+    height: 400vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.fifthpage-object-container {
+    height: 25rem;
+    width: 100%;
+    overflow: visible;
+}
+
+.fifthpage-object {
+    height: 25rem;
+    width: 25rem;
+    margin-left: 5rem;
+    position: relative;
+    display: flex;
+    overflow: visible;
+}
+
+.fifthpage-object span {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background-color: var(--grey);
+}
+
+#s15{
+    top: 0;
+    left: 0;
+    background-color: var(--grey);
+
+}
+
+#s25 {
+    top: 0;
+    right: 0;
+    background-color: var(--grey);
+
+}
+
+#s35 {
+    bottom: 0;
+    left: 0;
+    background-color: var(--grey);
+
+}
+
+#s45 {
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    background-color: var(--grey);
+
+}
