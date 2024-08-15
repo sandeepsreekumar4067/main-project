@@ -42,8 +42,30 @@ export default {
         duration: 1,
         rotate: 360,
       });
-
-    
+      tl.to('#s15',{
+        duration:0.8,
+        xPercent:-300,
+        yPercent:-60,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
+      tl.to('#s25',{
+        xPercent:-180,
+        rotate:0,
+        yPercent:-60,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
+      tl.to('#s35',{
+        xPercent:-180,
+        rotate:0,
+        yPercent:-60,
+        width:'100%',
+        clipPath:'none',
+        borderRadius:'20px'
+      })
     },
 };
 </script>
