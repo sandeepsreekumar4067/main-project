@@ -1,5 +1,8 @@
 <template>
   <div class="fifth-page-container">
+  <div class="fifth-page-title-container">
+    Our Features
+  </div>
     <div class="fifthpage-object-container">
       <div class="fifthpage-object">
         <span class="s5" id="s15">User-Friendly Interface</span>
@@ -35,6 +38,20 @@ export default {
         end: "bottom bottom",
       },
     });
+    const tl2 =gsap.timeline({
+      scrollTrigger:{
+        trigger:'.fifth-page-title-container',
+        start:'top 10%',
+        pin:true,
+        endTrigger:'.fifth-page-container',
+        end:'bottom bottom'
+      }
+    })
+    tl2.from('.fifth-page-title-container',{
+      xPercent:-300,
+      duration:1.5,
+      opacity:0
+    })
     tl.from(".fifthpage-object", {
       xPercent: 500,
       duration: 1,

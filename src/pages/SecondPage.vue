@@ -33,9 +33,9 @@
     <div class="secondPage-third-container">
       <div class="secondContainer-title">Representing Clients in</div>
       <div class="third-container-buttons">
-        <span>Corporate Law</span>
-        <span>Criminal Law</span>
-        <span>Real Estate Law</span>
+        <span class="tcb">Corporate Law</span>
+        <span class="tcb">Criminal Law</span>
+        <span class="tcb">Real Estate Law</span>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@ export default {
     gsap.from('.spa',{
       scrollTrigger:{
         trigger:'.secondPage-first-container',
-        start:'top 70%',
+        start:'top 80%',
         toggleActions:'play pause resume reverse'
       },
       xPercent:-100,
@@ -64,7 +64,7 @@ export default {
     gsap.from('.secondPage-second-container',{
       scrollTrigger:{
         trigger:'.secondPage-second-container',
-        start:'top 70%',
+        start:'top 80%',
         toggleActions:'play pause resume reverse'
       },
       xPercent:-100,
@@ -76,7 +76,7 @@ export default {
     gsap.from('.animated-span',{
       scrollTrigger:{
         trigger:'.animated-span',
-        start:'top 60%',
+        start:'top 80%',
         toggleActions:'play pause resume reverse'
       },
       xPercent:-100,
@@ -87,23 +87,36 @@ export default {
     gsap.from('.secondContainer-title',{
       scrollTrigger:{
         trigger:'.secondPage-third-container',
-        start:'top 70%',
+        start:'top 80%',
         toggleActions:'play pause resume reverse'
       },
       delay:0.4,
       xPercent:-100,
       opacity:0,
       duration:1.5,
+
     })
     gsap.from('.third-container-buttons',{
       scrollTrigger:{
         trigger:'.secondPage-third-container',
-        start:'top 70%',
+        start:'top 78%',
+        toggleActions:'play pause resume reverse'
+      },
+      delay:1,
+      xPercent:-100,
+      stagger:1.4,
+      opacity:0,
+      duration:1.5,
+    })
+    gsap.from('.tcb',{
+      scrollTrigger:{
+        trigger:'.secondPage-third-container',
+        start:'top 78%',
         toggleActions:'play pause resume reverse'
       },
       delay:0.7,
       xPercent:-100,
-      stagger:0.4,
+      stagger:0.7,
       opacity:0,
       duration:1.5,
     })
